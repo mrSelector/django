@@ -5,5 +5,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^', include('firstapp.urls')),
     path('secondapp/', include('secondapp.urls')),
+    path('thirdapp/', include('third_app.urls')),
+    #path('fourthapp/', include('fourth_app.urls')),
 
 ]
