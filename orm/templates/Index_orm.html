@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя страница</title>
+</head>
+<body>
+<H1>Humans</H1>
+{% block content%}
+<table border="1" cellpadding="5px">
+        <tr style = "background : green; color:white;">
+        <td>ID</td>
+        <td>Имя</td>
+        <td>Фамилия</td>
+        <td>Возраст</td>
+        <td>Компания</td>
+        <td>Зарплата</td>
+        <td><img src='https://img1.freepng.ru/20180203/afq/kisspng-button-icon-delete-button-png-image-5a756de9bd9403.9092848715176452897765.jpg' height="30"</td>
+        </tr>
+    {%for human in humans%}
+    <tr>
+        <td>{{human.id}}</td>
+        <td>{{human.name}}</td>
+        <td>{{human.surname}}</td>
+        <td>{{human.age}}</td>
+        <td>{{human.company}}</td>
+        <td>{{human.salary}}</td>
+        <td><button type="submit">Удалить запись с бд</button></td>
+
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+
+</body>
+</html>
