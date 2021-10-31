@@ -1,0 +1,8 @@
+from django import forms
+from .models import Human
+
+
+class HumanForm(forms.ModelForm):
+    class Meta:
+        model = Human
+        fields = ['name', 'surname', 'age', 'company', 'salary']
