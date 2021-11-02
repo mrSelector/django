@@ -14,3 +14,4 @@ def index(request:HttpRequest):
         return HttpResponse('ERROR')
     return render(request, 'body.html', {'form': form})
 
+
