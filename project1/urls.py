@@ -9,5 +9,4 @@ urlpatterns = [
     #path('fourthapp/', include('fourth_app.urls')),
     path('forms/', include('forms.urls')),
     path('' ,include('orm.urls'))
-
 ]
