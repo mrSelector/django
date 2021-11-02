@@ -11,3 +11,4 @@ def nsx(request):
 
 def civic(request):
     return render(request, 'civic.html')
+
