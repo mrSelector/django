@@ -12,6 +12,7 @@ Lesson_4
 
 
 Lesson_5
+application 'orm'
 Задание 1 –
 Создать приложение forms.
 Задание 2 –
