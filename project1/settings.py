@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'third_app.apps.ThirdAppConfig',
     'fourth_app.apps.FourthAppConfig',
     'forms.apps.FormsConfig',
-    'orm.apps.OrmConfig'
+    'orm.apps.OrmConfig',
+    'auth_user.apps.AuthUserConfig',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,5 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'auth_user.CustomUser'

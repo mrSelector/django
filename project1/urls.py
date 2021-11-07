@@ -8,5 +8,6 @@ urlpatterns = [
     path('thirdapp/', include('third_app.urls')),
     #path('fourthapp/', include('fourth_app.urls')),
     path('forms/', include('forms.urls')),
-    path('' ,include('orm.urls'))
+    #path('' ,include('orm.urls')),
+    path('' ,include('auth_user.urls')),
 ]
